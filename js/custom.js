@@ -68,22 +68,22 @@ $(function () {
     /* -------------------------------------
           HOME BANNER SLIDER				
  	-------------------------------------- */
-    var _tg_homeslider = jQuery('#tg-homeslider');
-    _tg_homeslider.pogoSlider({
-        pauseOnHover: false,
-        autoplay: false,
-        generateNav: true,
-        displayProgess: false,
-        autoplayTimeout: 6000,
-        targetHeight: 495,
-        responsive: true,
-        onSlideStart: (function () {
-            var _slideslength = jQuery('.pogoSlider-slide').length;
-            var _currentSlide = this.currentSlideIndex + 1;
-            jQuery('#tg-totalslides').text(_slideslength);
-            jQuery('#tg-currentslide').text(_currentSlide);
-        }),
-    }).data('plugin_pogoSlider');
+     var _tg_homeslider = jQuery('#tg-homeslider');
+     _tg_homeslider.pogoSlider({
+         pauseOnHover: false,
+         autoplay: true,  // Set this to true for auto-slider functionality
+         generateNav: true,
+         displayProgess: false,
+         autoplayTimeout: 6000,  // Adjust this value (in milliseconds) for the desired interval
+         targetHeight: 495,
+         responsive: true,
+         onSlideStart: (function () {
+             var _slideslength = jQuery('.pogoSlider-slide').length;
+             var _currentSlide = this.currentSlideIndex + 1;
+             jQuery('#tg-totalslides').text(_slideslength);
+             jQuery('#tg-currentslide').text(_currentSlide);
+         }),
+     }).data('plugin_pogoSlider');
 
 
     /* -------------------------------------

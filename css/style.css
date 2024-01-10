@@ -105,12 +105,12 @@ body {
 }
 
 #loading-center img {
-        height: 120px;
+    height: 120px;
     text-align: center;
     left: 0;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -118,6 +118,19 @@ body {
     -moz-transform: translateY(-50%);
     z-index: 99;
     margin: 0 auto;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /*============ Section Heading Part CSS Start===============*/
@@ -443,8 +456,8 @@ body {
     position: absolute;
     content: '';
     background: url(../images/smoke.png);
-    height: 100%;
-    width: 100%;
+    height: 130%;
+    width: 130%;
     bottom: -30%;
     opacity: 0.4;
     animation: marquee1 60s linear infinite;
@@ -1496,7 +1509,7 @@ body {
 =======================================*/
 
 #inner_area {
-    background: url(../images/breadcramb-image.jpg) no-repeat;
+    background: url(../images/breadcramb-image.png) no-repeat;
     position: relative;
     z-index: 1;
     background-size: cover;
