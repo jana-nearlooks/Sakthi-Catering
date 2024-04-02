@@ -1519,6 +1519,17 @@ body {
     -moz-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
     box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
 }
+#inner_area2 {
+    background: url(../images/contact\ banner.png) no-repeat;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    -webkit-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    -moz-box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+    box-shadow: 0 4px 5px rgba(25, 25, 25, 0.1);
+}
 
 .inner_Page h1 {
     font-size: 56px;
@@ -2156,4 +2167,21 @@ body {
 
 .back-top-btn:hover i {
     color: #fff;
+}
+
+.tc{
+    color:#f15f2a;
+    font-family: "Pinyon Script";
+    font-weight: 600;
+    line-height: 64px;
+}
+.text{
+    color:#151515;
+    font-weight: 600;
+    text-align: justify;
+    ont-family: 'Josefin Sens', sans-serif;
+}
+.symbol{
+    color:#f15f2a;
+    size:150px;
 }
